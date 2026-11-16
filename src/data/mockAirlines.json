@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Biman Bangladesh Airlines",
+    "iata": "BG",
+    "icao": "BBC",
+    "brandColor": "#006B3F",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Biman_Bangladesh_Airlines_logo.svg/120px-Biman_Bangladesh_Airlines_logo.svg.png"
+  },
+  {
+    "name": "US-Bangla Airlines",
+    "iata": "BS",
+    "icao": "UBG",
+    "brandColor": "#E31837",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/US-Bangla_Airlines_Logo.svg/120px-US-Bangla_Airlines_Logo.svg.png"
+  },
+  {
+    "name": "Emirates",
+    "iata": "EK",
+    "icao": "UAE",
+    "brandColor": "#D71921",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/120px-Emirates_logo.svg.png"
+  },
+  {
+    "name": "Qatar Airways",
+    "iata": "QR",
+    "icao": "QTR",
+    "brandColor": "#5C0E32",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Qatar_Airways_Logo.svg/120px-Qatar_Airways_Logo.svg.png"
+  },
+  {
+    "name": "Singapore Airlines",
+    "iata": "SQ",
+    "icao": "SIA",
+    "brandColor": "#003B5C",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Singapore_Airlines_Logo_2.svg/120px-Singapore_Airlines_Logo_2.svg.png"
+  },
+  {
+    "name": "British Airways",
+    "iata": "BA",
+    "icao": "BAW",
+    "brandColor": "#075AAA",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/British_Airways_Logo.svg/120px-British_Airways_Logo.svg.png"
+  },
+  {
+    "name": "Delta Air Lines",
+    "iata": "DL",
+    "icao": "DAL",
+    "brandColor": "#003A70",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Delta_logo.svg/120px-Delta_logo.svg.png"
+  }
+]
+

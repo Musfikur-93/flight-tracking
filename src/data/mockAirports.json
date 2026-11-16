@@ -1,0 +1,143 @@
+[
+  {
+    "iata": "DAC",
+    "icao": "VGHS",
+    "name": "Hazrat Shahjalal International Airport",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "timezone": "Asia/Dhaka",
+    "elevationFt": 30,
+    "coordinates": { "latitude": 23.8433, "longitude": 90.3978 }
+  },
+  {
+    "iata": "CXB",
+    "icao": "VGCB",
+    "name": "Cox's Bazar Airport",
+    "city": "Cox's Bazar",
+    "country": "Bangladesh",
+    "timezone": "Asia/Dhaka",
+    "elevationFt": 12,
+    "coordinates": { "latitude": 21.4522, "longitude": 91.9639 }
+  },
+  {
+    "iata": "CGP",
+    "icao": "VGEG",
+    "name": "Shah Amanat International Airport",
+    "city": "Chittagong",
+    "country": "Bangladesh",
+    "timezone": "Asia/Dhaka",
+    "elevationFt": 12,
+    "coordinates": { "latitude": 22.2496, "longitude": 91.8133 }
+  },
+  {
+    "iata": "ZYL",
+    "icao": "VGSY",
+    "name": "Osmani International Airport",
+    "city": "Sylhet",
+    "country": "Bangladesh",
+    "timezone": "Asia/Dhaka",
+    "elevationFt": 50,
+    "coordinates": { "latitude": 24.9632, "longitude": 91.8677 }
+  },
+  {
+    "iata": "JFK",
+    "icao": "KJFK",
+    "name": "John F. Kennedy International Airport",
+    "city": "New York",
+    "country": "United States",
+    "timezone": "America/New_York",
+    "elevationFt": 13,
+    "coordinates": { "latitude": 40.6413, "longitude": -73.7781 }
+  },
+  {
+    "iata": "LHR",
+    "icao": "EGLL",
+    "name": "London Heathrow Airport",
+    "city": "London",
+    "country": "United Kingdom",
+    "timezone": "Europe/London",
+    "elevationFt": 83,
+    "coordinates": { "latitude": 51.4700, "longitude": -0.4543 }
+  },
+  {
+    "iata": "DXB",
+    "icao": "OMDB",
+    "name": "Dubai International Airport",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "timezone": "Asia/Dubai",
+    "elevationFt": 62,
+    "coordinates": { "latitude": 25.2532, "longitude": 55.3657 }
+  },
+  {
+    "iata": "SIN",
+    "icao": "WSSS",
+    "name": "Singapore Changi Airport",
+    "city": "Singapore",
+    "country": "Singapore",
+    "timezone": "Asia/Singapore",
+    "elevationFt": 22,
+    "coordinates": { "latitude": 1.3644, "longitude": 103.9915 }
+  },
+  {
+    "iata": "HND",
+    "icao": "RJTT",
+    "name": "Tokyo Haneda Airport",
+    "city": "Tokyo",
+    "country": "Japan",
+    "timezone": "Asia/Tokyo",
+    "elevationFt": 35,
+    "coordinates": { "latitude": 35.5494, "longitude": 139.7798 }
+  },
+  {
+    "iata": "DOH",
+    "icao": "OTHH",
+    "name": "Hamad International Airport",
+    "city": "Doha",
+    "country": "Qatar",
+    "timezone": "Asia/Qatar",
+    "elevationFt": 13,
+    "coordinates": { "latitude": 25.2731, "longitude": 51.6080 }
+  },
+  {
+    "iata": "KUL",
+    "icao": "WMKK",
+    "name": "Kuala Lumpur International Airport",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "timezone": "Asia/Kuala_Lumpur",
+    "elevationFt": 69,
+    "coordinates": { "latitude": 2.7456, "longitude": 101.7099 }
+  },
+  {
+    "iata": "CDG",
+    "icao": "LFPG",
+    "name": "Charles de Gaulle Airport",
+    "city": "Paris",
+    "country": "France",
+    "timezone": "Europe/Paris",
+    "elevationFt": 392,
+    "coordinates": { "latitude": 49.0097, "longitude": 2.5479 }
+  },
+  {
+    "iata": "BKK",
+    "icao": "VTBS",
+    "name": "Suvarnabhumi Airport",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "timezone": "Asia/Bangkok",
+    "elevationFt": 5,
+    "coordinates": { "latitude": 13.6900, "longitude": 100.7501 }
+  },
+  {
+    "iata": "DEL",
+    "icao": "VIDP",
+    "name": "Indira Gandhi International Airport",
+    "city": "New Delhi",
+    "country": "India",
+    "timezone": "Asia/Kolkata",
+    "elevationFt": 777,
+    "coordinates": { "latitude": 28.5562, "longitude": 77.1000 }
+  }
+]
+

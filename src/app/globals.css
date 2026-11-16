@@ -1,0 +1,199 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FLIGHT TRACKER — GLOBAL STYLES (Aviation Radar Cockpit System)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── 1. Fonts Import (MUST BE FIRST IN CSS SPEC) ─────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+
+/* ── 2. Tailwind & Leaflet Imports ───────────────────────────────────────── */
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* ── 3. Tailwind Source Scan Roots ───────────────────────────────────────── */
+@source "../../src";
+@source "../components";
+@source "../app";
+
+/* ── 4. Tailwind Theme Tokens ────────────────────────────────────────────── */
+@theme {
+  --color-cockpit-deepest: #070B14;
+  --color-cockpit-dark:    #0B0F19;
+  --color-cockpit-panel:   #111827;
+  --color-cockpit-surface: #1A2235;
+  --color-cockpit-border:  #1E2D42;
+
+  --color-radar-cyan:      #00F0FF;
+  --color-radar-cyan-dim:  #06B6D4;
+  --color-radar-amber:     #F59E0B;
+  --color-radar-emerald:   #10B981;
+  --color-radar-red:       #EF4444;
+  --color-radar-violet:    #8B5CF6;
+  --color-radar-slate:     #64748B;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ── 5. CSS Custom Properties ────────────────────────────────────────────── */
+:root {
+  --bg-deepest:  #070B14;
+  --bg-dark:     #0B0F19;
+  --bg-panel:    #111827;
+  --bg-surface:  #1A2235;
+  --bg-border:   #1E2D42;
+
+  --accent-cyan:    #00F0FF;
+  --accent-cyan-dim:#06B6D4;
+  --accent-amber:   #F59E0B;
+  --accent-emerald: #10B981;
+  --accent-red:     #EF4444;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --radar-grid-size: 48px;
+  --radar-grid-color: rgba(0, 240, 255, 0.04);
+}
+
+/* ── 6. Base Resets ──────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-deepest);
+  color: #E2E8F0;
+  font-family: var(--font-sans);
+  color-scheme: dark;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── 7. Radar Grid & Cockpit Backgrounds ─────────────────────────────────── */
+.radar-grid-bg {
+  background-color: var(--bg-deepest);
+  background-image:
+    linear-gradient(var(--radar-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--radar-grid-color) 1px, transparent 1px);
+  background-size: var(--radar-grid-size) var(--radar-grid-size);
+}
+
+.cockpit-bg {
+  background-color: var(--bg-deepest);
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(0, 240, 255, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 80%, rgba(6, 182, 212, 0.04) 0%, transparent 45%),
+    linear-gradient(180deg, var(--bg-deepest) 0%, var(--bg-dark) 100%);
+}
+
+/* ── 8. Glassmorphism Utilities ──────────────────────────────────────────── */
+.glass-card {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 45, 66, 0.80);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel {
+  background: rgba(11, 15, 25, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(30, 45, 66, 0.90);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.60);
+}
+
+/* ── 9. Text Glow Utilities ──────────────────────────────────────────────── */
+.text-glow-cyan {
+  color: #00F0FF;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.70), 0 0 20px rgba(0, 240, 255, 0.35);
+}
+
+.text-glow-amber {
+  color: #F59E0B;
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.70), 0 0 20px rgba(245, 158, 11, 0.35);
+}
+
+/* ── 10. Monospace Telemetry Typography ──────────────────────────────────── */
+.font-telemetry {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+/* ── 11. Radar Animations ────────────────────────────────────────────────── */
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.radar-sweep {
+  animation: radarSweep 6s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.30s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ── 12. LEAFLET RADAR OVERRIDES (CRITICAL FIXES) ────────────────────────── */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  background: #070B14 !important;
+  font-family: var(--font-sans) !important;
+  z-index: 10;
+}
+
+/* Fix: Eliminate Leaflet default ugly white square background on divIcons */
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.plane-marker-icon,
+.airport-marker-icon {
+  background: transparent !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* Custom Cockpit Tooltip */
+.leaflet-tooltip.radar-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.leaflet-tooltip.radar-tooltip::before {
+  display: none !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.25);
+  border-radius: 3px;
+}
